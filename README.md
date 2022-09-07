@@ -1,2 +1,3 @@
-# Bang
-This is a group called Bang. I hope we can work together sufficiently and improve.  
+# A csoport leírása, tagok felsorolása...
+
+- egyik tag
