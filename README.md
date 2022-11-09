@@ -1,3 +1,0 @@
-# A csoport leírása, tagok felsorolása...
-
-- egyik tag
