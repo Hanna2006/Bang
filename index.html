@@ -17,9 +17,9 @@
 		<br/>
 		<table>
 			<tr>
-				<td colspan="2"><a href="introduction.html">Bemutatkozás</td>
-				<td colspan="2"><a href="school.html">Iskola</td>
-				<td colspan="2"><a href="hobbies.html">Hobbiim</td>
+				<td colspan="2"><a href="introduction.html"><div class="menu"><div>Bemutatkozás</div></div></td>
+				<td colspan="2"><a href="school.html"><div class="menu"><div>Iskola</div></div></td>
+				<td colspan="2"><a href="hobbies.html"><div class="menu"><div>Hobbiim</div></div></td>
 			</tr>
 		<style>
 			td {
@@ -29,8 +29,26 @@
 				width: 1000px;
 				font-size: 150%;
 			}
+			.menu div {
+				display: inline-block;
+				padding-left: 10px;
+				padding-right: 10px;
+				cursor: pointer;
+			}
+			.menu div:hover {
+				background-color: brown;
+			}
+			.menu {
+			flex-direction: row-reverse;
+			display: flex;
+			height: 20px;
+			background-color: black;
+			color: antiquewhite
+			}
 		</style>
 		</table>
 </html>
+
+		
 
 		
