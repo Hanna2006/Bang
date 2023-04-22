@@ -1,0 +1,38 @@
+<body>
+    <div id="o1"></div>
+</body>
+<style>
+    body {
+        height: 100px;
+        background-color: yellow;
+    }
+    #o1 {
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+        background-color: white;
+        box-shadow: 1px 1px 3px black;
+        transition: 2s;
+        animation-name: a1;
+        position: absolute;
+        left: 50%;
+        top: 2%;
+        animation: a1 7s infinite;
+    }
+    @keyframes a1 {
+        0% {
+            top: 2%;
+        }
+        33% {
+            top: 70%;
+            left: 70%;
+            border-radius: 100px;
+        }
+        66% {
+            top: 70%;
+            left: 30%;
+            width: 160px;
+        }
+    }
+</style>

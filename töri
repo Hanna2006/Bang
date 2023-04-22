@@ -1,0 +1,21 @@
+for kérdés in range(1,5):
+    if kérdés == 1:
+        válasz = input('Mikor volt a mohácsi csata?')
+        while válasz != '1526':
+            print('Helytelen.')
+        print('Helyes.')
+    if kérdés == 2:
+        válasz = input('Mikor lépett életbe a milánói edictum?')
+        while válasz != '313':
+            print('Helytelen.')
+        print('Helyes.')
+    if kérdés == 3:
+        válasz = input('Mikor ért véget a II. világháború?')
+        while válasz != '1945':
+            print('Helytelen.')
+        print('Helyes.')
+    if kérdés == 4:
+        válasz = input('Mikor lépett be Magyarország az EU-ba?')
+        while válasz != '2004':
+            print('Helytelen.')
+        print('Helyes.')

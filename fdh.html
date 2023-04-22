@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<style>
+    div.e {
+        background-color: rgb(255, 90, 24);
+        color: rgb(0, 0, 0);
+        box-shadow: 1px 1px 3px black;
+        border-radius: 8px;
+        margin: 4px;
+        padding: 15px;
+        text-shadow: 1px 1px 3px black;
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    div.cont {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    h1 {
+      text-align: center;
+      font-family: fantasy;
+      color: rgb(116, 35, 3);
+      text-shadow: 1px 1px 3px rgb(46, 25, 16);
+    }
+</style>
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/brython@3.10.3/brython.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/brython@3.10.3/brython_stdlib.js"></script>
+    <script type="text/python">
+        from browser import document, html
+        cont = html.DIV( Class="cont" )
+        for i in range(1,33):
+            cont <= html.DIV(
+                      html.SPAN(i) +
+                      html.SUP(3) +
+                      html.SPAN(f' = {i**3}'),
+                      Class="e"
+                    )
+        document <= html.H1("Köbszámok") + cont
+    </script>
+</head>
+<body onload="brython()"></body>

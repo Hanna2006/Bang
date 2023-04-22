@@ -1,0 +1,36 @@
+<div class="b">
+    <div class="o" onclick="
+        if (v == 1) {
+            this.style.borderRadius = '10%'
+            this.style.left = '10%'
+            v = 0
+        } else {
+            this.style.borderRadius = '50%'
+            this.style.left = '80%'
+            this.style.
+            v = 1
+        }
+    " onmouseover="this.style.backgroundColor = 'yellow'"
+      onmouseleave="this.style.backgroundColor = 'orange'">
+    </div>
+</div>
+<style>
+    .b {
+        height: 100px;
+    }
+    .o {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        background-color: yellow;
+        box-shadow: 1px 1px 3px black;
+        transition: 2s;
+        position: absolute;
+        left: 10%;
+        border-radius: 10%;
+    }
+</style>
+<script>
+    v = 0
+</script>
